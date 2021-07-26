@@ -22,96 +22,80 @@ BitDataView(buffer: ArrayBuffer, bitOffset?: number, bitLength?: number)
 > Creates a new BitDataView object
 
 #### Instance properties
-- buffer  
+- buffer: ArrayBuffer
 > The ArrayBuffer referenced by this view. Fixed at construction time and thus **read only**.
 
-- bitOffset  
+- bitOffset: number
 > The offset (in bits) of this view from the start of its ArrayBuffer. Fixed at construction time and thus **read only**.
 
-- bitLength  
+- bitLength: number
 > The length (in bits) of this view from the start of its ArrayBuffer. Fixed at construction time and thus **read only**.
 
 #### Instance methods
-- getBit(bitOffset: number)
+- getBit(bitOffset: number): 0 | 1
 > Gets a bit integer at the specified bit offset from the start of the view.
 
-- setBit(bitOffset: number, value: 0 | 1)
+- setBit(bitOffset: number, value: 0 | 1): void
 > Stores a bit integer value at the specified bit offset from the start of the view.
 
-- getUint8(bitOffset: number)
+- getUint8(bitOffset: number): number
 > Gets a unsigned 8bit integer at the specified bit offset from the start of the view.
 
-- setUint8(bitOffset: number, value: number)
+- setUint8(bitOffset: number, value: number): void
 > Stores a unsigned 8bit integer value at the specified bit offset from the start of the view.
 
-- getInt8(bitOffset: number)
+- getInt8(bitOffset: number): number
 > Gets a signed 8bit integer at the specified bit offset from the start of the view.
 
-- setInt8(bitOffset: number, value: number)
+- setInt8(bitOffset: number, value: number): void
 > Stores a signed 8bit integer value at the specified bit offset from the start of the view.
 
-- getUint16(bitOffset: number, littleEndian = false)
+- getUint16(bitOffset: number, littleEndian = false): number
 > Gets a unsigned 16bit integer at the specified bit offset from the start of the view.
 
-- setUint16(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setUint16(bitOffset: number, value: number, littleEndian = false): void
 > Stores a unsigned 16bit integer value at the specified bit offset from the start of the view.
 
-- getInt16(bitOffset: number, littleEndian = false)
+- getInt16(bitOffset: number, littleEndian = false): number
 > Gets a signed 16bit integer at the specified bit offset from the start of the view.
 
-- setInt16(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setInt16(bitOffset: number, value: number, littleEndian = false): void
 > Stores a signed 16bit integer value at the specified bit offset from the start of the view.
 
-- getUint32(bitOffset: number, littleEndian = false)
+- getUint32(bitOffset: number, littleEndian = false): number
 > Gets a unsigned 32bit integer at the specified bit offset from the start of the view.
 
-- setUint32(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setUint32(bitOffset: number, value: number, littleEndian = false): void
 > Stores a unsigned 32bit integer value at the specified bit offset from the start of the view.
 
-- getInt32(bitOffset: number, littleEndian = false)
+- getInt32(bitOffset: number, littleEndian = false): number
 > Gets a signed 32bit integer at the specified bit offset from the start of the view.
 
-- setInt32(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setInt32(bitOffset: number, value: number, littleEndian = false): void
 > Stores a signed 32bit integer value at the specified bit offset from the start of the view.
 
-- getBigUint64(bitOffset: number, littleEndian = false)
+- getBigUint64(bitOffset: number, littleEndian = false): bigint
 > Gets a unsigned 64bit integer at the specified bit offset from the start of the view.
 
-- setBigUint64(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setBigUint64(bitOffset: number, value: number, littleEndian = false): void
 > Stores a unsigned 64bit integer value at the specified bit offset from the start of the view.
 
-- getBigInt64(bitOffset: number, littleEndian = false)
+- getBigInt64(bitOffset: number, littleEndian = false): bigint
 > Gets a signed 64bit integer at the specified bit offset from the start of the view.
 
-- setBigInt64(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setBigInt64(bitOffset: number, value: number, littleEndian = false): void
 > Stores a signed 64bit integer value at the specified bit offset from the start of the view.
 
-- getFloat32(bitOffset: number, littleEndian = false)
+- getFloat32(bitOffset: number, littleEndian = false): number
 > Gets a signed 32bit float at the specified bit offset from the start of the view.
 
-- setFloat32(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setFloat32(bitOffset: number, value: number, littleEndian = false): void
 > Stores a signed 32bit float value at the specified bit offset from the start of the view.
 
-- getFloat64(bitOffset: number, littleEndian = false)
+- getFloat64(bitOffset: number, littleEndian = false): number
 > Gets a signed 64bit float at the specified bit offset from the start of the view.
 
-- setFloat64(bitOffset: number,
-    value: number,
-    littleEndian = false)
+- setFloat64(bitOffset: number, value: number, littleEndian = false): void
 > Stores a signed 64bit float value at the specified bit offset from the start of the view.
 
 ---
