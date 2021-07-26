@@ -22,13 +22,13 @@ BitDataView(buffer: ArrayBuffer, bitOffset?: number, bitLength?: number)
 > Creates a new BitDataView object
 
 #### Instance properties
-BitDataView.prototype.buffer  
+- buffer  
 > The ArrayBuffer referenced by this view. Fixed at construction time and thus **read only**.
 
-BitDataView.prototype.bitOffset  
+- bitOffset  
 > The offset (in bits) of this view from the start of its ArrayBuffer. Fixed at construction time and thus **read only**.
 
-BitDataView.prototype.bitLength  
+- bitLength  
 > The length (in bits) of this view from the start of its ArrayBuffer. Fixed at construction time and thus **read only**.
 
 #### Instance methods
