@@ -1,8 +1,8 @@
 # BitDataView
 
-With BitDataView you can parse ArrayBuffer.
+With BitDataView you can parse ArrayBuffer!
 
-Inspired by JavaScripts [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API.  
+Inspired by JavaScripts [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API.
 
 ---
 ## Install
